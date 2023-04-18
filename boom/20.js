@@ -51,20 +51,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 //폭탄 하트 구분
                 if (arr[n - 1] == 0) {
                     //하트
-                    box.innerHTML = '<img src="./hart.png">';
+                    box.innerHTML = '<img src="./boom/hart.png">';
                     if (cnt == 8) {
                         flag = true;
                         document.querySelector('h2').innerHTML = '성공!!!' ;
 
                         let lastArr = [1,2,3,4,5,6,7,8,9].filter((item)=> !selarr.includes(item))
                         console.log(lastArr[0])
-                        boxs[lastArr[0]-1].innerHTML = '<img src="./hart.png">';
+                        boxs[lastArr[0]-1].innerHTML = '<img src="./boom/hart.png">';
                     }
 
                 }
                 else {
                     //폭탄
-                    box.innerHTML = '<img src="./boom.png">';
+                    box.innerHTML = '<img src="./boom/boom.png">';
                     flag = true;
                     document.querySelector('h2').innerHTML = '실패!!!' ;
                 }
