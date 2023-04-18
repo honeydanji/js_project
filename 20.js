@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 //폭탄 하트 구분
                 if (arr[n - 1] == 0) {
                     //하트
-                    box.innerHTML = '<img src="./images/hart.png">';
+                    box.innerHTML = '<img src="./hart.png">';
                     if (cnt == 8) {
                         flag = true;
                         document.querySelector('h2').innerHTML = '성공!!!' ;
